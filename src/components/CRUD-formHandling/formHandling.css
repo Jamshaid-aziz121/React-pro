@@ -1,0 +1,8 @@
+.formHandling .bttnn button {
+
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: red !important;
+
+}

@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#myApp h1 {
+  padding: 1rem;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 1rem;
+}
+
+.main {
+  padding: 1rem;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+/* button {
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+} */

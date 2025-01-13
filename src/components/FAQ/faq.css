@@ -1,0 +1,36 @@
+/* FAQs  */
+
+.faqouter {
+    width: 100vhw;
+
+}
+
+.faqitems {
+    /* border: 1px solid red; */
+    margin: 0.7rem;
+}
+
+.faqitems h5 {
+    margin: 0px;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    background-color: lightslategray;
+    color: white;
+    text-align: left;
+    transition: 0.5ms;
+    cursor: pointer;
+
+}
+
+.faqitems h6 {
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+    transform: scaleY(0);
+}
+
+.activeFaq {
+    height: auto !important;
+    padding: 0.5rem !important;
+    transform: scaleY(1) !important;
+}

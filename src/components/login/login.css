@@ -1,0 +1,22 @@
+.login .password {
+    position: relative;
+}
+
+.login .password span {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+
+.login h2 {
+    color: white;
+    background-color: dodgerblue;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

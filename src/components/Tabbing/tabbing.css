@@ -1,0 +1,34 @@
+
+
+h1 {
+  text-align: center;
+}
+
+.outerTab {
+  width: 100wh;
+  margin: 20px auto;
+}
+
+.outerTab ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.outerTab ul li button {
+
+  border: none;
+  color: white;
+  padding: 0.7rem 40px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+
+.activeButton {
+  color: white !important;
+  background-color: red !important;
+}

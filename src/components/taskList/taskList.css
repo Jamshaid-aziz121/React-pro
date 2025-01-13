@@ -1,0 +1,92 @@
+.taskList #title2 {
+  color: red;
+  background-color: dodgerblue;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.taskList #title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 0.9rem;
+  background-color: dodgerblue;
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  /* gap: 1rem; */
+}
+
+.taskList input {
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem;
+  flex-basis: 47rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.taskList button {
+  font-size: 1.2rem !important;
+  flex-basis: 8rem !important;
+  border-radius: 0.8rem !important;
+
+
+}
+
+.taskList .outerDiv {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.taskList ul {
+  padding: 0px !important;
+  list-style: none !important;
+  margin-top: 2rem !important;
+  align-items: center !important;
+
+}
+
+
+.taskList ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: white;
+  text-align: left;
+  background-color: #282c34;
+  font-size: 1.2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  border-radius: 0.8rem;
+
+}
+
+.taskList ul li span {
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+  line-height: 0.7em;
+  border-radius: 0rem;
+}
+
+.taskList .completeTask {
+  text-decoration: line-through;
+  background-color: yellow !important;
+  color: red !important;
+}
+
+.taskList ul li button {
+  background-color: none;
+  height: 35px;
+  width: 35px;
+  border: 0;
+  border-radius: 5px;
+}

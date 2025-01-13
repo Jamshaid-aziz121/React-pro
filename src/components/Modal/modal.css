@@ -1,0 +1,61 @@
+/* Modal view OR show Modal */
+.modalApp {
+    height: 100vh;
+}
+
+.modalApp h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.modalApp #heading2 {
+    padding: 0.5rem;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 1rem;
+}
+
+.modalApp Button {
+    position: relative;
+}
+
+.modalApp .overLay {
+    display: none;
+    position: fixed;
+    top: 0% !important;
+    height: 100wh !important;
+    width: 100vw !important;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.modalApp .enquiryModal {
+    padding: 1rem;
+    height: 32rem;
+    width: 30rem !important;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    transition: 0.7s;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(243, 248, 248);
+
+
+}
+
+.modalApp .showModal {
+    display: block;
+    top: 65%;
+    z-index: 1;
+}
+
+.modalApp .btnModal {
+    position: relative;
+    margin: 24rem 0 0 26rem;
+}
+
+.modalApp .btnHide {
+    display: none !important;
+}

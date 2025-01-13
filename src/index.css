@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.main .btn {
+  width: 15rem;
+  height: 10rem;
+}
