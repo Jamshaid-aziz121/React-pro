@@ -68,7 +68,7 @@ function App() {
             <BrowserRouter>
               <Routes>
 
-                <Route path='/dashboard' element={<Main />} />
+                <Route path='/' element={<Main />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/tasklist' element={<TaskList />} />
                 <Route path='/faq' element={<FAQ />} />
