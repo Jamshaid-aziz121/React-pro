@@ -43,7 +43,7 @@ export default function Products() {
 
   const ProductItems = ({ product }) => {
     return (
-      <Col lg={3} md={3} sm={1} style={{ width: "33%" }}>
+      <Col lg={3} md={3} sm={1} style={{ width: "30%" }}>
         <Card
           className="card shadow p-3 mb-5 bg-white rounded"
           style={{ width: "24rem", height: "auto" }}
