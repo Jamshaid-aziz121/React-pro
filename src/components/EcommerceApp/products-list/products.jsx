@@ -43,8 +43,12 @@ export default function Products() {
 
   const ProductItems = ({ product }) => {
     return (
-      <Col>
-        <Card className="card" style={{ width: "18rem" }} role="button">
+      <Col lg={3} md={3} sm={1} style={{ width: "33%" }}>
+        <Card
+          className="card shadow p-3 mb-5 bg-white rounded"
+          style={{ width: "24rem", height: "auto" }}
+          role="button"
+        >
           <Card.Img variant="top" src={product.thumbnail} />
           <Card.Body>
             <Card.Title>{product.Title}</Card.Title>
@@ -78,7 +82,7 @@ export default function Products() {
       ) : (
         <>
           <Container>
-            <Row className="gap-3">{productList}</Row>
+            <Row>{productList}</Row>
           </Container>
         </>
       )}

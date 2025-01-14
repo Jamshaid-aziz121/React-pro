@@ -68,8 +68,8 @@ function App() {
             <BrowserRouter>
               <Routes>
 
-                <Route path='/' element={<Login />} />
-                <Route path='/dashboard' element={<Main />} />
+                <Route path='/' element={<Main />} />
+                <Route path='/login' element={<Login />} />
                 <Route path='/tasklist' element={<TaskList />} />
                 <Route path='/faq' element={<FAQ />} />
                 <Route path='/modal' element={<Modal />} />
@@ -81,7 +81,7 @@ function App() {
                 <Route path='/statehandling' element={<StateHandling />} />
                 <Route path='/formhandling' element={<CRUD />} />
                 <Route path='/eCommerceApp' element={<Ecommerce />} >
-                  <Route path="/eCommerceApp" element={<EcommerLogin />} />
+                  <Route path="/eCommerceApp" element={<HomePage />} />
                   <Route path="/eCommerceApp/homepage" element={<HomePage />} />
                   <Route path="/eCommerceApp/products" element={<Products />} />
                   <Route
@@ -146,6 +146,9 @@ function Main() {
           </Col>
           <Col>
             <NavLink to='/eCommerceApp' end>  <Button className='shadow-lg bg-primary rounded-5 border-none'> eCommerceApp </Button> </NavLink>
+          </Col>
+          <Col>
+            <NavLink to='/login' end>  <Button className='shadow-lg bg-primary rounded-5 border-none'> Login </Button> </NavLink>
           </Col>
 
         </Row>
