@@ -1,5 +1,6 @@
 
 import './myStyle.css';
+import './output.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Button, Col, Container, Row } from 'react-bootstrap';
@@ -19,12 +20,12 @@ import { useEffect } from 'react';
 import { Login } from './components/login/Login.jsx';
 // import FormHandling from './components/CRUD-formHandling/CRUD.jsx';
 import CRUD from './components/CRUD-formHandling/CRUD.jsx';
-import Ecommerce from './components/EcommerceApp/Ecommerce.jsx';
-import HomePage from './components/EcommerceApp/homepage/index.jsx';
-import Products from './components/EcommerceApp/products-list/products.jsx';
-import ProductDetails from './components/EcommerceApp/product-details/index.jsx';
-import Cart from './components/EcommerceApp/cart/index.jsx';
-import EcommerLogin from './components/EcommerceApp/login/index.jsx';
+import Ecommerce from './components/EcommerceApp/EcommerceApp.js';
+// import HomePage from './components/EcommerceApp/homepage/index.jsx';
+// import Products from './components/EcommerceApp/products-list/products.jsx';
+// import ProductDetails from './components/EcommerceApp/product-details/index.jsx';
+// import Cart from './components/EcommerceApp/cart/index.jsx';
+// import EcommerLogin from './components/EcommerceApp/login/index.jsx';
 
 
 
@@ -56,32 +57,29 @@ function App() {
 
   return (
     <div id="myApp">
-      <Container fluid>
-        <ToastContainer />
+      <ToastContainer />
 
-        <Container>
-          <Row>
-            <h1 onClick={addDocument} role='button'> Pro-x React </h1>
-          </Row>
-          <Row>
+      <Row>
+        <h1 onClick={addDocument} > Pro-x React </h1>
+      </Row>
 
-            <BrowserRouter>
-              <Routes>
+      <BrowserRouter>
+        <Routes>
 
-                <Route path='/' element={<Main />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/tasklist' element={<TaskList />} />
-                <Route path='/faq' element={<FAQ />} />
-                <Route path='/modal' element={<Modal />} />
-                <Route path='/passwordgenerator' element={<Passwordgenerator />} />
-                <Route path='/tabbing' element={<Tabbing />} />
-                <Route path='/ternaryoperator' element={<TernaryOperator />} />
-                <Route path='/showhidepassword' element={<ShowHidePassword />} />
-                <Route path='/expensetracker' element={<ExpenseTracker />} />
-                <Route path='/statehandling' element={<StateHandling />} />
-                <Route path='/formhandling' element={<CRUD />} />
-                <Route path='/eCommerceApp' element={<Ecommerce />} >
-                  <Route path="/eCommerceApp" element={<HomePage />} />
+          <Route path='/' element={<Main />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/tasklist' element={<TaskList />} />
+          <Route path='/faq' element={<FAQ />} />
+          <Route path='/modal' element={<Modal />} />
+          <Route path='/passwordgenerator' element={<Passwordgenerator />} />
+          <Route path='/tabbing' element={<Tabbing />} />
+          <Route path='/ternaryoperator' element={<TernaryOperator />} />
+          <Route path='/showhidepassword' element={<ShowHidePassword />} />
+          <Route path='/expensetracker' element={<ExpenseTracker />} />
+          <Route path='/statehandling' element={<StateHandling />} />
+          <Route path='/formhandling' element={<CRUD />} />
+          <Route path='/eCommerceApp' element={<Ecommerce />} >
+            {/* <Route path="/eCommerceApp" element={<HomePage />} />
                   <Route path="/eCommerceApp/homepage" element={<HomePage />} />
                   <Route path="/eCommerceApp/products" element={<Products />} />
                   <Route
@@ -92,15 +90,12 @@ function App() {
                     path="/eCommerceApp/product-details/:id"
                     element={<ProductDetails />}
                   />
-                  <Route path="/eCommerceApp/cart" element={<Cart />} />
-                </Route>
+                  <Route path="/eCommerceApp/cart" element={<Cart />} /> */}
+          </Route>
 
-              </Routes>
-            </BrowserRouter>
-          </Row>
+        </Routes>
+      </BrowserRouter>
 
-        </Container>
-      </Container>
 
     </div>
   );
