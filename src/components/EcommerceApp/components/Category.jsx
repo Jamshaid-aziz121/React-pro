@@ -25,7 +25,7 @@ export default memo(({ setCatName }) => {
   let cate = finCate.map((category, i) => {
     // console.log("category", category);
     return (
-      <div className="text-dark font-monospace bg-gray-700 fw-medium hover:font-bold py-2 px-3 fs-5 mb-2 shadow-lg rounded-3 cursor-pointer">
+      <div className="text-dark font-monospace bg-white-900 fw-medium hover:font-bold py-2 px-3 fs-5 mb-2 shadow-lg rounded-3 cursor-pointer">
         <li onClick={() => setCatName(category.name)} key={i}>
           {category.name}
         </li>
