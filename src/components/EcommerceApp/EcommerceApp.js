@@ -10,7 +10,7 @@ function EcommerceApp() {
 
   return (
 
-    <div className='bg-white opcaity-100'>
+    <div className='bg-dark'>
       <div className='py-1'>
         <div className='max-w-[1320px] mx-auto'>
 
@@ -18,7 +18,7 @@ function EcommerceApp() {
             Our Products
           </h2>
 
-          <Row className="g-4">
+          <Row className="g-2">
             {/* Category section (25%) */}
             <Col xs={3}>
               <Category setCatName={setCatName} />

@@ -25,7 +25,7 @@ export default memo(({ setCatName }) => {
   let cate = finCate.map((category, i) => {
     // console.log("category", category);
     return (
-      <div className="text-dark font-monospace bg-white-900 fw-medium hover:font-bold py-2 px-3 fs-5 mb-2 shadow-lg rounded-3 cursor-pointer">
+      <div className="hover:text-blue-subtle hover:font-bold text-white font-monospace bg-white-900 fw-medium py-2 px-3 fs-5 mb-2 shadow-lg rounded-3 cursor-pointer">
         <li onClick={() => setCatName(category.name)} key={i}>
           {category.name}
         </li>
@@ -36,7 +36,7 @@ export default memo(({ setCatName }) => {
   // console.log("cate", cate);
   return (
     <div className="opacity-100  ">
-      <h4 className="font-monospace hover:text-black hover:font-bold p-4 mb-4 text-dark text-center rounded-3 shadow-xl bg-white bg-transparent">
+      <h4 className=" text-white font-monospace p-4 mb-4  text-center rounded-3 shadow-xl bg-white bg-transparent">
         Product Category
       </h4>
       <ul>{cate.length ? cate : "loading..."}</ul>

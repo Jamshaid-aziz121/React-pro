@@ -29,7 +29,7 @@ export default function ProductItems({ catName }) {
   const productCards = products.map((product, index) => {
     // console.log("products", products);
     return (
-      <Card style={{ width: "22rem" }} className="shadow-lg border-0">
+      <Card style={{ width: "20rem" }} className="shadow-lg border-0 bg-dark">
         <Card.Img variant="top" src={product.thumbnail} />
         <Card.Body className="flex-grow-1">
           <h6 className="text-center font-monospace">{product.title}</h6>
