@@ -1,6 +1,5 @@
 
 import './myStyle.css';
-import './output.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Button, Col, Container, Row } from 'react-bootstrap';
